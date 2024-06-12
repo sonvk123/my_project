@@ -1,0 +1,75 @@
+.Login {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.fb_logo {
+  height: 106px;
+  margin: -28px;
+}
+
+.Form_login {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+.Form_login input {
+  height: 50px;
+  width: 330px;
+  padding-left: 20px;
+  border-radius: 12px;
+  color: rgba(0, 0, 0, 0.256);
+  border: 2px solid rgba(0, 0, 0, 0.256); /* Ensure full border property */
+  outline: none; /* Remove default outline */
+}
+
+.Form_login input:focus {
+  border-color: rgb(20, 95, 218);
+}
+
+.Form_login button {
+  color: white;
+  cursor: pointer;
+}
+
+.btn_Login {
+  height: 50px;
+  width: 354px;
+  border-radius: 12px;
+  background-color: #0866ff;
+  border-color: #0866ff;
+}
+
+.Identify {
+  display: flex;
+  justify-content: center;
+  color: #0866ff;
+  cursor: pointer;
+}
+
+.Identify a {
+  text-decoration: none;
+}
+.Identify a:hover {
+  text-decoration: underline;
+}
+
+.btn_Register {
+  display: flex;
+  justify-content: center;
+}
+
+.btn_Register button {
+  height: 50px;
+  width: 254px;
+  border-radius: 12px;
+  background-color: #42b72a;
+  border-color: #42b72a;
+}
