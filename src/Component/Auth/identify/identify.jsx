@@ -26,16 +26,20 @@ const identify = () => {
           </div>
         </div>
         <div className={styles.Form}>
-        <div className={styles.Form_identify}>
+          <div className={styles.Form_identify}>
             <p>Tìm tài khoản của bạn</p>
             <hr></hr>
-            <p>
+            <p className={styles.Form_text}>
               Vui lòng nhập email hoặc số di động để tìm kiếm tài khoản của bạn.
             </p>
-            <input placeholder="Email hoặc số điện thoại" />
+            <div className={styles.Form_input}>
+              <input placeholder="Email hoặc số điện thoại" />
+            </div>
             <hr></hr>
-            <button>Hủy</button>
-            <button>Tìm kiếm</button>
+            <div className={styles.Form_button}>
+              <button className={styles.Form_Cancel}>Hủy</button>
+              <button className={styles.Form_Search}>Tìm kiếm</button>
+            </div>
           </div>
         </div>
       </div>

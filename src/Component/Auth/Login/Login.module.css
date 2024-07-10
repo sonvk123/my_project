@@ -37,6 +37,8 @@
 .Form_login button {
   color: white;
   cursor: pointer;
+  font-weight: 600;
+  
 }
 
 .btn_Login {

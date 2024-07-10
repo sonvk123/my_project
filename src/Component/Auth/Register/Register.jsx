@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 
-
+import styles from "./Register.module.css";
 const Register = () => {
   function populateDays() {
     const daySelect = document.getElementById("day");
@@ -42,49 +42,57 @@ const Register = () => {
   }, []);
 
   return (
-    <form>
+    <div className={styles.Register}>
       <div>
-        <div>
-          <h1>Đăng ký</h1>
-          <p>Nhanh chóng và dễ dàng.</p>
+        <div className={styles.Logo}>
+          <img
+            class={styles.fb_logo}
+            src="https://static.xx.fbcdn.net/rsrc.php/y1/r/4lCu2zih0ca.svg"
+            alt="Facebook"
+          />
         </div>
-        <div>
-          <button>X</button>
+        <div className={styles.From_Register}>
+          <div className={styles.title}>
+            <h1>Tạo tài khoản mới</h1>
+            <p>Nhanh chóng và dễ dàng.</p>
+          </div>
+          <hr></hr>
+          <div className={styles.From_input}>
+            <div>
+              <input type="text" placeholder="Họ" />
+              <input type="text" placeholder="Tên" />
+            </div>
+            <div>
+              <input type="text" placeholder="Email hoặc số điện thoại" />
+              <input type="password" placeholder="Mật khẩu mới" />
+            </div>
+            <div>
+              <label>Ngày sinh</label>
+              <select name="day" id="day"></select>
+
+              <select name="month" id="month"></select>
+
+              <select name="year" id="year"></select>
+            </div>
+
+            <div>
+              <label for="gender">Giới tính:</label>
+              <input type="radio" name="gender" id="male" value="male" />
+              <label for="male">Nam</label>
+
+              <input type="radio" name="gender" id="female" value="female" />
+              <label for="female">Nữ</label>
+
+              <input type="radio" name="gender" id="other" value="other" />
+              <label for="other">Khác</label>
+            </div>
+          </div>
+          <div>
+            <button>Đăng ký</button>
+          </div>
         </div>
       </div>
-      <div>
-        <div>
-          <input type="text" placeholder="Họ" />
-          <input type="text" placeholder="Tên" />
-        </div>
-        <div>
-          <input type="text" placeholder="Email hoặc số điện thoại" />
-          <input type="password" placeholder="Mật khẩu mới" />
-        </div>
-        <div>
-          <label>Ngày sinh</label>
-          <select name="day" id="day"></select>
-
-          <select name="month" id="month"></select>
-
-          <select name="year" id="year"></select>
-        </div>
-      </div>
-      <div>
-        <label for="gender">Giới tính:</label>
-        <input type="radio" name="gender" id="male" value="male" />
-        <label for="male">Nam</label>
-
-        <input type="radio" name="gender" id="female" value="female" />
-        <label for="female">Nữ</label>
-
-        <input type="radio" name="gender" id="other" value="other" />
-        <label for="other">Khác</label>
-      </div>
-      <div>
-        <button>Đăng ký</button>
-      </div>
-    </form>
+    </div>
   );
 };
 
